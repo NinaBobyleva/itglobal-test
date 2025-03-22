@@ -2,11 +2,16 @@
   padding: 8px 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #d5d8dd;
 
   &__logo {
     height: 24px;
     width: 174px;
+  }
+
+  &__sidebar {
+    display: none;
   }
 
   &__box {
@@ -52,11 +57,22 @@
     width: 20px;
   }
 
-  @media (min-width: 320px) and (max-width: 575px) {
+  @media (max-width: 767px) {
     .header {
-        &__logo {
-            display: none;
-        }
+      &__logo {
+        display: none;
+      }
+
+      &__sidebar {
+        display: block;
+      }
+
+      &__search-box {
+        display: none;
+      }
+      &__login {
+        display: none;
+      }
     }
   }
 }

@@ -7,6 +7,9 @@ export const Header = () => {
       <div className="header__logo">
         <img className="logo" src="./img/logo.png" alt="logo" />
       </div>
+      <div className="header__sidebar">
+        <img src="./img/sidebar.svg" alt="sidebar" />
+      </div>
       <div className="header__box">
         <div className="header__search-box">
           <Input type="text" placeholder="Поиск" />
