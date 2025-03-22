@@ -2,7 +2,6 @@ import globals from "globals";
 import js from "@eslint/js";
 import pluginReact from "eslint-plugin-react";
 import pluginPrettier from "eslint-plugin-prettier";
-import babelParser from "@babel/eslint-parser";
 
 export default [
   js.configs.recommended,
@@ -13,7 +12,6 @@ export default [
       globals: {
         ...globals.browser,
       },
-      parser: babelParser,
       ecmaVersion: "latest",
       sourceType: "module",
       parserOptions: {
@@ -30,6 +28,7 @@ export default [
       "prettier/prettier": "error",
       "no-unused-vars": "warn",
       "react/prop-types": "off",
+      "react/jsx-uses-vars": "error"
     },
   },
 ];
