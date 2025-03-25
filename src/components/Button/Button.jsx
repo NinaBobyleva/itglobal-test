@@ -1,8 +1,5 @@
-type ButtonProp = {
-    title: string;
-    onClick: () => void;
-}
+import "./button.scss";
 
-export const Button = ({title, onClick}: ButtonProp) => {
-    return <button onClick={onClick}>{title}</button>
-}
+export const Button = ({ title }) => {
+  return <button className="button">{title}</button>;
+};

@@ -4,6 +4,10 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #d5d8dd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
 
   &__logo {
     height: 24px;

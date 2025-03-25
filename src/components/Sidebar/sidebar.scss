@@ -1,8 +1,11 @@
 .sidebar {
   display: flex;
+  position: sticky;
+  top: 49px;
+  align-self: flex-start;
+  height: calc(100vh - 49px);
 
   &__box {
-    height: 100vh;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -36,9 +39,8 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
-
     &__menu-box {
-        display: none;
+      display: none;
     }
   }
 }

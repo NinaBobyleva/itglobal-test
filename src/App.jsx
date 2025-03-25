@@ -6,7 +6,7 @@ import { Wrapper } from "./components/Wrapper/Wrapper.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="all">
       <Header />
       <Wrapper>
         <Sidebar />
